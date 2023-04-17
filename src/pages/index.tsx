@@ -14,7 +14,7 @@ export default function Home() {
     </Head>
       <main className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] h-screen">
 
-        <aside className='col-start-1 col-end-2 row-start-1 row-end-3 w-20 lg:w-56 h-screen border-r border-colorBorder/25'>
+        <aside className='col-start-1 col-end-2 row-start-1 row-end-3 w-20 lg:w-64 h-screen border-r border-colorBorder/25'>
           <nav>
             <ul className='flex flex-col items-center lg:items-start lg:m-4 lg:ml-6 space-y-4 lg:space-y-8'>
               <a className='mt-4' href="">
@@ -22,48 +22,54 @@ export default function Home() {
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='fill-neutral-50' src={"/icons/House.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>Home</p>
+                <p className=' hidden lg:block text-xl '>Home</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/Hash.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>Explore</p>
+                <p className='hidden lg:block text-xl'>Explore</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/Bell.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>Notifications</p>
+                <p className='hidden lg:block text-xl '>Notifications</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/EnvelopeSimple.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>Messages</p>
+                <p className='hidden lg:block text-xl '>Messages</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/BookmarkSimple.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>Bookmarks</p>
+                <p className='hidden lg:block text-xl '>Bookmarks</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/FileText.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>Lists</p>
+                <p className='hidden lg:block text-xl '>Lists</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/User.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>Profile</p>
+                <p className='hidden lg:block text-xl '>Profile</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/DotsThreeCircle.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='text-2xl '>More</p>
+                <p className='hidden lg:block text-xl '>More</p>
               </a>
               <a className='flex justify-center items-center gap-2 lg:hidden'  href="">
                 <div className='w-12 h-12 bg-primary rounded-full flex items-center justify-center'>
                   <Image className='' src={"/icons/Pencil.svg"} width={24} height={24} alt={'Home'} ></Image>
                 </div>
               </a>
+              <div className=''>
+                <button className=' hidden lg:block w-52 h-10 bg-primary rounded-full mr-4 hover:bg-primary/80'>
+                  <h1 className='font-semibold text-lg'>Tweet</h1>
+                </button> 
+              </div>
+
             </ul>
           </nav>
         </aside>
 
         {/* Topo */}
         <div className='h-16 w-full col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-between border-b border-colorBorder/25'>
-          <h1 className='px-4 font-semibold text-xl' >Home</h1>
+          <h1 className='px-4 font-semibold text-xl lg:text-2xl' >Home</h1>
           <Image className='mr-4' src={"/icons/Sparkle.svg"} width={24} height={24} alt={'Home'} ></Image>
         </div>
 
@@ -92,7 +98,7 @@ export default function Home() {
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1> Jonh Travolta</h1>
-              <p className='text-zinc-400 hover:text-zinc-50' >@Jonh</p>
+              <p className='text-zinc-400 hover:text-primary' >@Jonh</p>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -110,6 +116,10 @@ export default function Home() {
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
                 </div>
+                <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
+                    <Image className='hidden lg:block' src={'/icons/Heart.svg'} width={24} height={24} alt='comentario'></Image>
+                    <p className='hidden lg:block'>30</p>
+                </div>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 mr-2 hover:text-zinc-50'>
                   <Image src={'/icons/ArrowsClockwise.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>32</p>
@@ -125,7 +135,7 @@ export default function Home() {
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Angela Arden</h1>
-              <p className='text-zinc-400 hover:text-zinc-50' >@angela_arden</p>
+              <p className='text-zinc-400 hover:text-primary' >@angela_arden</p>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -141,6 +151,10 @@ export default function Home() {
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
+                </div>
+                <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
+                    <Image className='hidden lg:block' src={'/icons/Heart.svg'} width={24} height={24} alt='comentario'></Image>
+                    <p className='hidden lg:block'>30</p>
                 </div>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 mr-2 hover:text-zinc-50'>
                   <Image src={'/icons/ArrowsClockwise.svg'} width={24} height={24} alt='comentario'></Image>
@@ -158,7 +172,7 @@ export default function Home() {
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Julia Stone</h1>
-              <p className='text-zinc-400 hover:text-zinc-50' >@julia</p>
+              <p className='text-zinc-400 hover:text-primary' >@julia</p>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -171,6 +185,10 @@ export default function Home() {
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
+                </div>
+                <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
+                    <Image className='hidden lg:block' src={'/icons/Heart.svg'} width={24} height={24} alt='comentario'></Image>
+                    <p className='hidden lg:block'>30</p>
                 </div>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 mr-2 hover:text-zinc-50'>
                   <Image src={'/icons/ArrowsClockwise.svg'} width={24} height={24} alt='comentario'></Image>
@@ -187,8 +205,8 @@ export default function Home() {
               <Image src={'/images/perfil5.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
-              <h1>Julia Stone</h1>
-              <p className='text-zinc-400 hover:text-zinc-50' >@julia</p>
+              <h1>Julio Robert</h1>
+              <p className='text-zinc-400 hover:text-primary' >@juliorobert12</p>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -201,6 +219,10 @@ export default function Home() {
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
+                </div>
+                <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
+                    <Image className='hidden lg:block' src={'/icons/Heart.svg'} width={24} height={24} alt='comentario'></Image>
+                    <p className='hidden lg:block'>30</p>
                 </div>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 mr-2 hover:text-zinc-50'>
                   <Image src={'/icons/ArrowsClockwise.svg'} width={24} height={24} alt='comentario'></Image>
@@ -216,8 +238,8 @@ export default function Home() {
               <Image src={'/images/perfil6.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
-              <h1>Robert Julio</h1>
-              <p className='text-zinc-400 hover:text-zinc-50' >@julia</p>
+              <h1>Joey Tribiani</h1>
+              <p className='text-zinc-400 hover:text-primary' >@joey</p>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p className='mb-2'>
@@ -227,6 +249,10 @@ export default function Home() {
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
+                </div>
+                <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
+                    <Image className='hidden lg:block' src={'/icons/Heart.svg'} width={24} height={24} alt='comentario'></Image>
+                    <p className='hidden lg:block'>30</p>
                 </div>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 mr-2 hover:text-zinc-50'>
                   <Image src={'/icons/ArrowsClockwise.svg'} width={24} height={24} alt='comentario'></Image>
