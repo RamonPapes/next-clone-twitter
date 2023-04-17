@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: '400'
+  weight: '500'
 })
 
 
@@ -22,35 +22,35 @@ export default function Home() {
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='fill-neutral-50' src={"/icons/House.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className=' hidden lg:block text-xl '>Home</p>
+                <p className=' hidden lg:block text-xl hover:text-primary '>Home</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/Hash.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='hidden lg:block text-xl'>Explore</p>
+                <p className='hidden lg:block text-xl hover:text-primary' >Explore</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/Bell.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='hidden lg:block text-xl '>Notifications</p>
+                <p className='hidden lg:block text-xl hover:text-primary '>Notifications</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/EnvelopeSimple.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='hidden lg:block text-xl '>Messages</p>
+                <p className='hidden lg:block text-xl  hover:text-primary'>Messages</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/BookmarkSimple.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='hidden lg:block text-xl '>Bookmarks</p>
+                <p className='hidden lg:block text-xl  hover:text-primary'>Bookmarks</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/FileText.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='hidden lg:block text-xl '>Lists</p>
+                <p className='hidden lg:block text-xl hover:text-primary '>Lists</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/User.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='hidden lg:block text-xl '>Profile</p>
+                <p className='hidden lg:block text-xl hover:text-primary '>Profile</p>
               </a>
               <a className='flex justify-center items-center gap-2'  href="">
                 <Image className='' src={"/icons/DotsThreeCircle.svg"} width={28} height={28} alt={'Home'} ></Image>
-                <p className='hidden lg:block text-xl '>More</p>
+                <p className='hidden lg:block text-xl hover:text-primary'>More</p>
               </a>
               <a className='flex justify-center items-center gap-2 lg:hidden'  href="">
                 <div className='w-12 h-12 bg-primary rounded-full flex items-center justify-center'>
@@ -92,13 +92,13 @@ export default function Home() {
           </div>
 
           {/* Segundo Card */}
-          <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] border border-colorBorder/25 gap-x-2'>
+          <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] border border-colorBorder/25 gap-2'>
             <div className='col-start-1 col-end-2 row-start-1 row-end-3  flex justify-center items-start m-2'>
               <Image src={'/images/perfil3.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1> Jonh Travolta</h1>
-              <p className='text-zinc-400 hover:text-primary' >@Jonh</p>
+              <a href=""><p className='text-zinc-400 hover:text-primary' >@Jonh</p></a>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Angela Arden</h1>
-              <p className='text-zinc-400 hover:text-primary' >@angela_arden</p>
+              <a href=""><p className='text-zinc-400 hover:text-primary' >@angela_arden</p></a>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -172,7 +172,7 @@ export default function Home() {
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Julia Stone</h1>
-              <p className='text-zinc-400 hover:text-primary' >@julia</p>
+              <a href=""><p className='text-zinc-400 hover:text-primary' >@julia</p></a>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -206,7 +206,7 @@ export default function Home() {
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Julio Robert</h1>
-              <p className='text-zinc-400 hover:text-primary' >@juliorobert12</p>
+              <a href=""><p className='text-zinc-400 hover:text-primary' >@juliorobert12</p></a>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p>
@@ -239,7 +239,7 @@ export default function Home() {
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Joey Tribiani</h1>
-              <p className='text-zinc-400 hover:text-primary' >@joey</p>
+              <a href=""><p className='text-zinc-400 hover:text-primary' >@joey</p></a>
             </div>
             <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
               <p className='mb-2'>
