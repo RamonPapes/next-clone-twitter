@@ -79,7 +79,7 @@ export default function Home() {
           {/* Primeiro Card */}
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] gap-2 border border-colorBorder/25 '>
             <div className='col-start-1 col-end-2 row-start-1 row-end-2 flex justify-center items-center m-2 mt-4'>
-              <Image src={'/images/perfil1.png'} width={48} height={48} alt='foto de perfil '></Image>
+              <Image className='mr-4' src={'/images/perfil1.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-start'>
               <input className='focus:outline-none bg-transparent font-semibold text-xl' type="text" placeholder='Whats happening?' />
@@ -94,7 +94,7 @@ export default function Home() {
           {/* Segundo Card */}
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] border border-colorBorder/25 gap-2'>
             <div className='col-start-1 col-end-2 row-start-1 row-end-3  flex justify-center items-start m-2'>
-              <Image src={'/images/perfil3.png'} width={48} height={48} alt='foto de perfil '></Image>
+              <Image className='max-w-none' src={'/images/perfil3.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1> Jonh Travolta</h1>
@@ -113,7 +113,7 @@ export default function Home() {
               </p>
               <div className='flex justify-start gap-40 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
-                  <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
+                  <Image  src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
                 </div>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
@@ -131,7 +131,7 @@ export default function Home() {
           {/* Terceiro Card */}
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] border border-colorBorder/25 gap-x-2'>
             <div className='col-start-1 col-end-2 row-start-1 row-end-3  flex justify-center items-start m-2'>
-              <Image src={'/images/perfil4.png'} width={48} height={48} alt='foto de perfil '></Image>
+              <Image className='max-w-none' src={'/images/perfil4.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Angela Arden</h1>
@@ -168,7 +168,7 @@ export default function Home() {
 
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] border border-colorBorder/25 gap-x-2'>
             <div className='col-start-1 col-end-2 row-start-1 row-end-3  flex justify-center items-start m-2'>
-              <Image src={'/images/perfil2.png'} width={48} height={48} alt='foto de perfil '></Image>
+              <Image className='max-w-none' src={'/images/perfil2.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Julia Stone</h1>
@@ -202,7 +202,7 @@ export default function Home() {
 
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] border border-colorBorder/25 gap-x-2'>
             <div className='col-start-1 col-end-2 row-start-1 row-end-3  flex justify-center items-start m-2'>
-              <Image src={'/images/perfil5.png'} width={48} height={48} alt='foto de perfil '></Image>
+              <Image className='max-w-none' src={'/images/perfil5.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Julio Robert</h1>
@@ -235,7 +235,7 @@ export default function Home() {
           {/* Sexto Card */}
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] border border-colorBorder/25 gap-x-2'>
             <div className='col-start-1 col-end-2 row-start-1 row-end-3  flex justify-center items-start m-2'>
-              <Image src={'/images/perfil6.png'} width={48} height={48} alt='foto de perfil '></Image>
+              <Image className='max-w-none' src={'/images/perfil6.png'} width={48} height={48} alt='foto de perfil '></Image>
             </div>
             <div className='text-base col-start-2 col-end-3 row-start-1 row-end-2 flex justify-start items-center gap-1 mt-2'>
               <h1>Joey Tribiani</h1>
