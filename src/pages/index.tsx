@@ -13,10 +13,11 @@ export default function Home() {
     <><Head>
     </Head>
       <main className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] h-screen">
-
+        
+        {/* Nav */}
         <aside className='col-start-1 col-end-2 row-start-1 row-end-3 w-20 lg:w-64 h-screen border-r border-colorBorder/25'>
           <nav>
-            <ul className='flex flex-col items-center lg:items-start lg:m-4 lg:ml-6 space-y-4 lg:space-y-8'>
+            <ul className='fixed ml-3 flex flex-col items-center lg:items-start lg:m-4 lg:ml-6 space-y-4 lg:space-y-8'>
               <a className='mt-4' href="">
                 <Image src={"/icons/Logo.svg"} width={28} height={28} alt={'Blue bird fly'} ></Image>
               </a>
