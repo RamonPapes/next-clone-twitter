@@ -68,13 +68,13 @@ export default function Home() {
         </aside>
 
         {/* Topo */}
-        <div className='h-16 w-full col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-between border-b border-colorBorder/25'>
+        <div className='h-16 w-11/12 col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-between border-b border-colorBorder/25'>
           <h1 className='px-4 font-semibold text-xl lg:text-2xl' >Home</h1>
           <Image className='mr-4' src={"/icons/Sparkle.svg"} width={24} height={24} alt={'Home'} ></Image>
         </div>
 
         {/* Main */}
-        <div className=''>
+        <div className='w-11/12'>
 
           {/* Primeiro Card */}
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] gap-2 border border-colorBorder/25 '>
@@ -100,7 +100,7 @@ export default function Home() {
               <h1> Jonh Travolta</h1>
               <a href=""><p className='text-zinc-400 hover:text-primary' >@Jonh</p></a>
             </div>
-            <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-4'>
+            <div className='col-start-2 col-end-3 row-start-2 row-end-3 flex justify-start flex-col gap-y-4'>
               <p>
                 Acabei de migrar um projeto React GIGANTE de create-react-app para Vite e os resultados foram:
               </p>
@@ -111,7 +111,7 @@ export default function Home() {
               <p className='mb-2'>
                 Além disso, troquei do Yarn para o PNPM e o install das deps mudou de 24s para 8s 🔥
               </p>
-              <div className='flex justify-start gap-40 mb-4'>
+              <div className='flex justify-start gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image  src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -147,7 +147,7 @@ export default function Home() {
               <p className='mb-2'>
                 Tudo começa com um projeto open source/free 👀
               </p>
-              <div className='flex justify-start gap-40 mb-4'>
+              <div className='flex justify-start gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -181,7 +181,7 @@ export default function Home() {
               <p className='mb-2'>
                 Participe de conferências, siga blogs e sites de tecnologia, e junte-se a comunidades online para aprimorar suas habilidades #programação #webdev
               </p>
-              <div className='flex justify-start gap-40 mb-4'>
+              <div className='flex justify-start gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -215,7 +215,7 @@ export default function Home() {
               <p className='mb-2'>
                 –o mês no JS começa em 0 (janeiro = 0)<br />–a semana começa em 0 (domingo = 0) <br />–o mês no MySQL começa em 1 (janeiro = 1) <br />–a semana no MySQL começa na segunda-feira (domingo = 6)
               </p>
-              <div className='flex justify-start gap-40 mb-4'>
+              <div className='flex justify-start gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -245,7 +245,7 @@ export default function Home() {
               <p className='mb-2'>
                 melhor velocidade pra vídeos do youtube: 1.75x
               </p>
-              <div className='flex justify-start gap-40 mb-4'>
+              <div className='flex justify-start gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
