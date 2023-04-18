@@ -111,7 +111,7 @@ export default function Home() {
               <p className='mb-2'>
                 Além disso, troquei do Yarn para o PNPM e o install das deps mudou de 24s para 8s 🔥
               </p>
-              <div className='flex justify-start gap-20 mb-4'>
+              <div className='flex justify-start gap-16 lg:gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image  src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -147,7 +147,7 @@ export default function Home() {
               <p className='mb-2'>
                 Tudo começa com um projeto open source/free 👀
               </p>
-              <div className='flex justify-start gap-20 mb-4'>
+              <div className='flex justify-start gap-16 lg:gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -181,7 +181,7 @@ export default function Home() {
               <p className='mb-2'>
                 Participe de conferências, siga blogs e sites de tecnologia, e junte-se a comunidades online para aprimorar suas habilidades #programação #webdev
               </p>
-              <div className='flex justify-start gap-20 mb-4'>
+              <div className='flex justify-start gap-16 lg:gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -215,7 +215,7 @@ export default function Home() {
               <p className='mb-2'>
                 –o mês no JS começa em 0 (janeiro = 0)<br />–a semana começa em 0 (domingo = 0) <br />–o mês no MySQL começa em 1 (janeiro = 1) <br />–a semana no MySQL começa na segunda-feira (domingo = 6)
               </p>
-              <div className='flex justify-start gap-20 mb-4'>
+              <div className='flex justify-start gap-16 lg:gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
@@ -245,7 +245,7 @@ export default function Home() {
               <p className='mb-2'>
                 melhor velocidade pra vídeos do youtube: 1.75x
               </p>
-              <div className='flex justify-start gap-20 mb-4'>
+              <div className='flex justify-start gap-16 lg:gap-20 mb-4'>
                 <div className='flex flex-row gap-3 justify-center items-center text-zinc-400 hover:text-zinc-50'>
                   <Image src={'/icons/comment.svg'} width={24} height={24} alt='comentario'></Image>
                   <p>30</p>
