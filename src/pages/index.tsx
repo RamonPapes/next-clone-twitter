@@ -68,13 +68,13 @@ export default function Home() {
         </aside>
 
         {/* Topo */}
-        <div className='h-16 w-11/12 col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-between border-b border-colorBorder/25'>
+        <div className='h-16 w-11/12 lg:w-full col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-between border-b border-colorBorder/25'>
           <h1 className='px-4 font-semibold text-xl lg:text-2xl' >Home</h1>
           <Image className='mr-4' src={"/icons/Sparkle.svg"} width={24} height={24} alt={'Home'} ></Image>
         </div>
 
         {/* Main */}
-        <div className='w-11/12'>
+        <div className='w-11/12 lg:w-full'>
 
           {/* Primeiro Card */}
           <div className='grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] gap-2 border border-colorBorder/25 '>
